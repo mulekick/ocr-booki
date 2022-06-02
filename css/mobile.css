@@ -1,0 +1,144 @@
+/* ================= MOBILE STYLES ================== */
+@media (max-width: 768px) {
+    header {
+        /* remove default padding */
+        padding: 0;
+    }
+
+    main {
+        /* remove default padding */
+        padding: 0;
+    }
+
+    #title, #search, #filter {
+        /* default padding for page remainder */
+        padding: 0px 5%;
+        width: 90%;
+    }
+
+    /* -------------- HEADER STYLES ----------------- */
+    header {
+        /* will center the logo because of ul width weSmart */
+        justify-content: space-evenly;
+        padding: 0px;
+    }
+
+    header > nav {
+        /* force to header width to fill all the viewport */
+        width: 100%;
+    }
+
+    header > nav > ul > li {
+        /* adjust to logo height */
+        height: 60px;
+        width: 50%;
+        /* set 2 pixels aside for hovering */
+        padding: 0 0 2px 0;
+        /* content layout management */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+    }    
+
+    header > nav > ul > li {
+        /* override */
+        border-top: none;
+        padding-bottom: 0;
+        border-bottom: solid #F2F2F2 2px;
+    }
+
+    header > nav > ul > li:hover {
+        /* override */
+        border-top: unset;
+        border-bottom: solid #0065FC 2px;
+    }
+
+    header > nav > ul > li:hover > a {
+        color: #0065FC;
+    }
+
+    /* -------------- SEARCH STYLES ----------------- */
+
+    #search > div:nth-child(2) {
+        min-width: calc(100% - 80px);
+    }
+
+    #search > div:nth-child(2) > input[type=text] {
+        width:100%;
+    }
+
+    #search > div:nth-child(3) {
+        /* hide mobile search button */
+        display: none;
+    }
+
+    #search > div:nth-child(4) {
+        display: flex;
+        min-width: 40px;
+        padding: 0;
+        margin-left: -10px;
+        border: 1px solid #0065FC;
+        border-radius: 10px;
+        color: white;
+        background-color: #0065FC;
+        cursor: pointer;
+    }
+
+    /* -------------- FILTER STYLES ----------------- */
+    #filter > ul > li.filter {
+        /* adjust spacing */
+        margin: 10px 10px 10px 0;
+    }
+
+    /* -------------- CARDS CONTAINER STYLES ------------ */
+    div.container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    div.container > div > h2, div.container > div > i {
+        margin-bottom: 20px;
+    }
+
+    /* -------------- 'MOST POPULAR' STYLES ------------- */
+    div.container > section:nth-child(1) {
+        margin-left: 0;
+        padding: 0 5%;
+        padding-block: 25px;
+        width: 90%;
+        border-radius: 0;
+    }
+    
+    div.container > section:nth-child(1) > div.thumbnail {
+        margin: 5px 0;
+    }
+    
+    /* --------- 'MARSEILLE ACCOMODATIONS' STYLES ------- */
+    div.container > section:nth-child(2) {
+        /* reset background color */
+        background-color: white;
+        padding: 0 5%;
+        padding-block: 25px;
+        width: 90%;
+        border-radius: 0;
+    }
+
+    div.container > section:nth-child(2) > div.thumbnail {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* ----------- 'MARSEILLE ACTIVITIES' STYLES -------- */
+    #activities {
+        /* default padding for page remainder */
+        padding: 0 5%;
+        /* display on one column */
+        width: 90%;
+    }
+    
+    #activities > h2 {
+        margin-bottom: 20px;
+    }
+
+}

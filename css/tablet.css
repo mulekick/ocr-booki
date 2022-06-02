@@ -1,0 +1,95 @@
+/* ================= TABLET STYLES ================== */
+@media (max-width: 992px) {
+    /* -------------- CARDS CONTAINER STYLES ------------ */
+    div.container {
+        /* reset minimum width -> switch to tablet layout */
+        min-width: unset;
+    }
+
+    /* -------------- 'MOST POPULAR' STYLES ------------- */
+    div.container > section:nth-child(1) {
+        /* prevent cropping */
+        margin-left: 2.5%;
+        width: 48.75%;
+        padding: 30px 2%;
+
+    }
+
+    div.container > section:nth-child(1) > div.thumbnail {
+        min-width: unset;
+    }
+    
+    /* --------- 'MARSEILLE ACCOMODATIONS' STYLES ------- */
+    div.container > section:nth-child(2) {
+        /* prevent cropping */
+        width: 48.75%;
+        padding: 30px 2%;
+    }
+
+    div.container > section:nth-child(2) > div.thumbnail {
+        width: 100%;
+    }
+
+    /* ----------- 'MARSEILLE ACTIVITIES' STYLES -------- */
+    #activities {
+        /* reset minimum width -> switch to tablet layout */
+        min-width: unset;
+        /* update flex layout */
+        flex-direction: column;
+    }
+
+    #activities div.thumbnail {
+        /* display on one column */
+        width: 100%;
+    }
+
+    #activities div.thumbnail > div:nth-child(1) {
+        /* harmonize thumbnails height */
+        height: 165px;
+    }
+
+    /* ----------- ACTIVITIES WRAPPER DIV STYLES -------- */
+    #activities > div.activities_wrapper {
+        width: 100%;
+        height: unset;
+        /* content layout management */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    #activities > div.activities_wrapper > div.thumbnail {
+        margin: 10px 0;
+    }
+    
+
+    #activities > div.activities_wrapper > div.thumbnail.large > div:nth-child(1) {
+        /* manage second wrapper thumbnails ... */
+        height: 165px;
+    }
+
+    #activities > div.activities_wrapper > div.thumbnail.small > div:nth-child(1) {
+        /* manage second wrapper thumbnails ... */
+        height: 165px;
+    }
+
+    /* ----------------- PAGE FOOTER STYLES ------------- */
+    footer {
+        /* reset padding */
+        min-width: unset;
+        /* reset padding */
+        padding: unset;
+        /* change layout */
+        flex-direction: column;
+    }
+
+    footer > ul {
+        /* proper vertical alignment across sections */
+        padding-left: revert;
+        /* reset width */
+        width: auto;
+    }
+
+}

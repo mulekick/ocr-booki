@@ -1,0 +1,20 @@
+/* ----------------- PAGE FOOTER STYLES ------------- */
+footer > ul {
+    /* no bullet points kekw*/
+    list-style-type: none;
+    width: 30%;
+    /* stop shrinking of uls */
+    /* min-width: 425px; */
+    /* remove bullet points default padding */
+    padding-left: 0;
+}
+
+footer > ul > li {
+    /* vertical spacing */
+    margin: 10px 0;
+}
+
+footer > ul > li:first-child {
+    /* vertical spacing */
+    margin: 20px 0;
+}

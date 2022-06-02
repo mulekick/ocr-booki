@@ -1,0 +1,52 @@
+/* ----------------- HEADER STYLES ------------------ */
+header > img {
+    /* resize logo */
+    height: 40px;
+    padding: 10px;
+}
+
+header > nav > ul {
+    /* no bullet points kekw*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    /* content layout management */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+header > nav > ul > li {
+    /* adjust to logo height */
+    height: 60px;
+    width: 150px;
+    /* set 2 pixels aside for hovering */
+    padding: 2px 0 0 0;
+    /* content layout management */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+header > nav > ul > li:hover {
+    padding-top: 0;
+    border-top: solid #0065FC 2px;
+}
+
+header > nav > ul > li:hover > a {
+    color: #0065FC;
+}
+
+/* ------------------ TITLE STYLES ------------------ */
+#title {
+    color: black;
+    margin: 10px 0;
+    /* content layout management */
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: flex-start;
+}

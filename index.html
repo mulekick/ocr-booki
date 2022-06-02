@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- page title -->
+        <title>Welcome to Booki.com !</title>
+        <!-- file metadata -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="mulekick" />
+        <meta name="description" content="HTML integration of the Booki.com homepage" />
+        <!-- normalize css file -->
+        <link rel='stylesheet' href='css/normalize.css' />
+        <!-- font awesome css file -->
+        <link rel='stylesheet' href='css/fa/all.css' />
+        <!-- main css file -->
+        <link rel='stylesheet' href='css/main.css' />
+        <link rel='stylesheet' href='css/header.title.css' />
+        <link rel='stylesheet' href='css/search.css' />
+        <link rel='stylesheet' href='css/filter.css' />
+        <link rel='stylesheet' href='css/accomodations.css' />
+        <link rel='stylesheet' href='css/activities.css' />
+        <link rel='stylesheet' href='css/footer.css' />
+        <!-- breakpoints css files -->
+        <link rel='stylesheet' href='css/tablet.css' />
+        <link rel='stylesheet' href='css/mobile.css' />
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- logo -->
+            <img src="images/Booki.png" alt="Welcome to Booki.com" />
+            <!-- selector -->
+            <nav>
+                <ul>
+                    <li><a href="#accomodations"><span class="weak">Hébergements</span></a></li>
+                    <li><a href="#activities"><span class="weak">Activités</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- title -->
+            <div id="title">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <span class="weak">En plein centre ville ou en pleine nature</span>
+            </div>
+            <!-- search widget -->
+            <div id="search">
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <div><input type="text" id="fldLocation" name="fldLocation" size="15" value="Marseille, France" required /></div>
+                <div id="searchDesktop"><span class="average">Rechercher</span></div>
+                <div id="searchMobile"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div id="filter">
+                <!-- filter widget -->
+                <h2>Filtres</h2>
+                <ul>
+                    <li class="filter">    
+                        <div class="bgIcon"><i class="fa-solid fa-money-bill-1-wave"></i></div>
+                        <span class="average">Économique</span>
+                    </li>
+                    <li class="filter">   
+                        <div class="bgIcon"><i class="fa-solid fa-child-reaching"></i></div>
+                        <span class="average">Familial</span>
+                    </li>
+                    <li class="filter">   
+                        <div class="bgIcon"><i class="fa-solid fa-heart"></i></div>
+                        <span class="average">Romantique</span>
+                    </li>
+                    <li class="filter">   
+                        <div class="bgIcon"><i class="fa-solid fa-dog"></i></div>
+                        <span class="average">Animaux autorisés</span>
+                    </li>
+                </ul>
+                <div class="nowrap">
+                    <div class="bgIconSmall"><i class="fa-solid fa-info"></i></div>&nbsp;&nbsp;
+                    <span class="weak">Plus de 500 logements sont disponibles dans cette ville</span>
+                </div>
+            </div>
+            <div class="container">
+                <section id="popular">
+                    <!-- most popular widget -->
+                    <h2>Les plus populaires</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <!-- thumbnails -->
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/soleil.matin.jpg" alt="Le soleil du matin" />
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <span class="weak">Nuit à partir de 128€</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/coeur.eau.jpg" alt="Au coeur de l'eau" />
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Au coeur de l'eau<br />Chambres d'hôtes</h3>
+                                <span class="weak">Nuit à partir de 71€</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/bleu.blanc.jpg" alt="Tout bleu et blanc" />
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <span class="weak">Nuit à partir de 68€</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                </section>
+                <section id="accomodations">
+                    <!-- marseille accomodations widget -->
+                    <h2>Hébergements à Marseille</h2>
+                    <!-- thumbnails -->
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/auberge.canebiere.jpg" alt="La Canebière" />
+                        </div>
+                        <div>
+                            <h3>Auberge La Canebière</h3>
+                            <span class="weak">Nuit à partir de 25€</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/hotel.port.jpg" alt="Hôtel du port" />
+                        </div>
+                        <div>
+                            <h3>Hôtel du port</h3>
+                            <span class="weak">Nuit à partir de 52€</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/hotel.mouettes.jpg" alt="Les mouettes" />
+                        </div>
+                        <div>
+                            <h3>Hôtel Les mouettes</h3>
+                            <span class="weak">Nuit à partir de 76€</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/hotel.mer.jpg" alt="La mer" />
+                        </div>
+                        <div>
+                            <h3>Hôtel de la mer</h3>
+                            <span class="weak">Nuit à partir de 46€</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/hotel.panier.jpg" alt="Le panier" />
+                        </div>
+                        <div>
+                            <h3>Auberge Le Panier</h3>
+                            <span class="weak">Nuit à partir de 23€</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/hotel.amina.jpg" alt="Chez Amina" />
+                        </div>
+                        <div>
+                            <h3>Hôtel chez Amina</h3>
+                            <span class="weak">Nuit à partir de 96€</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>                            
+                        </div>
+                    </div>
+                    <h3>Afficher plus</h3>
+                </section>
+            </div>
+            <section id="activities">
+                <!-- marseille activities widget -->
+                <h2>Activités à Marseille</h2>
+                <!-- thumbnails -->
+                <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                    <div>
+                        <img src="images/vieux.port.jpg" alt="Vieux port" />
+                    </div>
+                    <div>
+                        <h3>Vieux port</h3>                         
+                    </div>
+                </div>
+                <div class="activities_wrapper">
+                    <div class="thumbnail large" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/fort.pomegues.jpg" alt="Fort de Pomègues" />
+                        </div>
+                        <div>
+                            <h3>Fort de Pomègues</h3>                         
+                        </div>
+                    </div>
+                    <div class="thumbnail small" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/iles.frioul.jpg" alt="Îles du Frioul" />
+                        </div>
+                        <div>
+                            <h3>Îles du Frioul</h3>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                    <div>
+                        <img src="images/parc.calanques.jpg" alt="Parc National des Calanques" />
+                    </div>
+                    <div>
+                        <h3>Parc National des Calanques</h3>                         
+                    </div>
+                </div>
+                <div class="activities_wrapper">
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/notre.dame.jpg" alt="Notre Dame de la Garde" />
+                        </div>
+                        <div>
+                            <h3>Notre-Dame-de-la-Garde</h3>                         
+                        </div>
+                    </div>
+                    <div class="thumbnail" onclick="document.location.href=`index.html#`">
+                        <div>
+                            <img src="images/parc.longchamp.jpg" alt="Parc Longchamp" />
+                        </div>
+                        <div>
+                            <h3>Parc Longchamp</h3>                         
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><h3>A propos</h3></li>
+                <li><span class="weak">Fonctionnement du site</span></li>
+                <li><span class="weak">Conditions générales de vente</span></li>
+                <li><span class="weak">Données et confidentialité</span></li>
+            </ul>
+            <ul>
+                <li><h3>Nos hébergements</h3></li>
+                <li><span class="weak">Charte qualité</span></li>
+                <li><span class="weak">Soumettre votre hôtel</span></li>
+            </ul>
+            <ul>
+                <li><h3>Assistance</h3></li>
+                <li><span class="weak">Centre d'aide</span></li>
+                <li><span class="weak">Nous contacter</span></li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+/* -------------- CARDS CONTAINER STYLES ------------ */
+div.container {
+    width: 100%;
+    /* content layout management */
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+div.container > section:nth-child(1) {
+    margin-left: 2.5%;
+    width: 27.5%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px 2%;
+    /* content layout management */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.container > section:nth-child(2) {
+    width: 70%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px 2%; 
+    /* content layout management */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------------- 'MOST POPULAR' STYLES ------------- */
+div.container > section:nth-child(1) > div.thumbnail {
+    width: 100%;
+    /* stop shrinking of cards */
+    /* min-width: 300px; */
+    margin: 10px 0;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+    overflow: hidden;
+    /* cursor (link managed through event) */
+    cursor: pointer;
+    /* content layout management */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.container > section:nth-child(1) > div.thumbnail > div:nth-child(1) {
+    width: 40%;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+div.container > section:nth-child(1) > div.thumbnail > div:nth-child(1) > img {
+    /* adjust images to container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.container > section:nth-child(1) > div.thumbnail > div:nth-child(2) {
+    width: 60%;
+    height: 150px;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    /* content layout management */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.container > section:nth-child(1) > div.thumbnail > div:nth-child(2) > * {
+    /* remove vertical margins */
+    margin: 0;
+}
+
+/* --------- 'MARSEILLE ACCOMODATIONS' STYLES ------- */
+div.container > section:nth-child(2) > h2 {
+    width: 100%;
+}
+
+div.container > section:nth-child(2) > div.thumbnail {
+    width: 30%;
+    /* stop shrinking of cards */
+    /* min-width: 250px; */
+    height: 215px;
+    margin: 10px 0;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+    overflow: hidden;
+    /* cursor (link managed through event) */
+    cursor: pointer;
+    /* content layout management */
+    display: flex;
+    flex-direction: column;
+}
+
+div.container > section:nth-child(2) > div.thumbnail > div:nth-child(1) {
+    /* width: 100%; */
+    height: 60%;
+    box-sizing: border-box;
+}
+
+div.container > section:nth-child(2) > div.thumbnail > div:nth-child(1) > img {
+    /* adjust images to container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.container > section:nth-child(2) > div.thumbnail > div:nth-child(2) {
+    /* width: 65%; */
+    height: 40%;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    /* content layout management */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.container > section:nth-child(2) > div.thumbnail > div:nth-child(2) > * {
+    /* remove vertical margins */
+    margin: 0;
+}
+
+div.container > section:nth-child(2) > h3:last-child {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ----------------------- STARS ---------------------*/
+.rating {
+    margin-top: 5px !important;
+    font-size: x-small;
+    color: blue;
+}
+
+.rating > .grey {
+    color: #F2F2F2;
+}

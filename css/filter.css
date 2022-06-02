@@ -1,0 +1,107 @@
+/* ------------------ FILTER STYLES ----------------- */
+#filter {
+    /* content layout management */
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#filter > h2 {
+    /* append right margin */
+    margin-right: 10px;
+}
+
+#filter > ul {
+    /* no bullet points kekw*/
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0px;
+    /* content layout management */
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#filter > ul > li {
+    /* adjust to logo height */
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px 0;
+    /* content layout management */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#filter > ul > li.filter {
+    /* preserve filters vertical spacing when flex wraps */
+    margin: 10px 20px 10px 0;
+    border: 2px solid #F2F2F2;
+}
+
+#filter > ul > li:first-child {
+    /* remove left margin */
+    margin-left: 0;
+}
+
+#filter > ul > li.filter:hover {
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+#filter > ul > li.filter > div.bgIcon {
+    /* adjust to logo height */
+    height: 44px;
+    width: 44px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    margin-left: -2px;
+    /* content layout management */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filter > ul > li.filter > span {
+    /* adjust to logo height */
+    height: 40px;
+    padding: 0 10px;
+    /* content layout management */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filter > div.nowrap {
+    width: 100%;
+    flex-wrap: nowrap;
+    /* content layout management */
+    width: 100%;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+#filter > div.nowrap > div.bgIconSmall {
+    /* adjust to logo height */
+    height: 22.5px;
+    width: 22.5px;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    color: #0065FC;
+    /* content layout management */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
